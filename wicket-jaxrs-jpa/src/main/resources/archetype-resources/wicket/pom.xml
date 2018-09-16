@@ -1,43 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>${groupId}</groupId>
-    <artifactId>${rootArtifactId}-parent</artifactId>
-    <version>${version}</version>
-    <relativePath>../</relativePath>
-  </parent>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>${groupId}</groupId>
+		<artifactId>${rootArtifactId}-parent</artifactId>
+		<version>${version}</version>
+		<relativePath>../</relativePath>
+	</parent>
 
-  <artifactId>${rootArtifactId}-${artifactId}</artifactId>
-  <packaging>jar</packaging>
+	<artifactId>${rootArtifactId}-${artifactId}</artifactId>
+	<packaging>jar</packaging>
 
-  <properties>
-    <version.wicket>8.1.0</version.wicket>
-  </properties>
+	<properties>
+		<version.wicket>8.1.0</version.wicket>
+	</properties>
 
-  <dependencies>
-    <!-- Java EE 7 dependency -->
-    <dependency>
-      <groupId>javax</groupId>
-      <artifactId>javaee-api</artifactId>
-      <scope>provided</scope>
-    </dependency>
-	<dependency>
-		<groupId>javax.servlet</groupId>
-		<artifactId>javax.servlet-api</artifactId>
-		<scope>provided</scope>
-	</dependency>
-	<dependency>
-		<groupId>org.apache.wicket</groupId>
-		<artifactId>wicket-core</artifactId>
-	</dependency>
-	<dependency>
-		<groupId>org.apache.wicket</groupId>
-		<artifactId>wicket-cdi</artifactId>
-	</dependency>
-    <dependency>
-      <groupId>${groupId}</groupId>
-      <artifactId>${rootArtifactId}-domain</artifactId>
-    </dependency>
-  </dependencies>
+	<dependencies>
+		<!-- Java EE 7 dependency -->
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.wicket</groupId>
+			<artifactId>wicket-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.wicket</groupId>
+			<artifactId>wicket-cdi</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>${groupId}</groupId>
+			<artifactId>${rootArtifactId}-domain</artifactId>
+		</dependency>
+	</dependencies>
 </project>
