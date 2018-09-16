@@ -17,7 +17,7 @@
 	</properties>
 
 	<build>
-		<finalName>demo</finalName>
+		<finalName>${rootArtifactId}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>io.thorntail</groupId>
