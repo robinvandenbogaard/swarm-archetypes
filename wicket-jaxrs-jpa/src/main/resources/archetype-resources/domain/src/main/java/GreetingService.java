@@ -6,7 +6,7 @@ package ${package};
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 
-import nl.test.example.GreetingGateway;
+import ${package}.GreetingGateway;
 
 import java.util.Date;
 import java.util.List;

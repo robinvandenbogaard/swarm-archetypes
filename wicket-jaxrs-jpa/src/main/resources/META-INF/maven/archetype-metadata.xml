@@ -16,6 +16,28 @@
           <directory>src/main/resources</directory>
           <includes>
             <include>**/*.yml</include>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="wicket" dir="wicket" name="wicket">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+            <include>**/*.html</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="rest" dir="rest" name="rest">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
           </includes>
         </fileSet>
       </fileSets>
@@ -42,6 +64,12 @@
           <directory>src/main/java</directory>
           <includes>
             <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/*.xml</include>
           </includes>
         </fileSet>
       </fileSets>

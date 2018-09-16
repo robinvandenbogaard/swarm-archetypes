@@ -12,7 +12,8 @@ public interface GreetingGateway {
 
 	List<GreetingDTO> getAllGreetings();
 
-	class GreetingDTO implements Serializable{
+	class GreetingDTO implements Serializable {
+		private static final long serialVersionUID = 1L;
 		public String name;
 		public Date greetedAt;
 	}

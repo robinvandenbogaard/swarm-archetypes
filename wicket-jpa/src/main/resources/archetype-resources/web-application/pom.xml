@@ -12,23 +12,9 @@
   <packaging>war</packaging>
 
   <properties>
-    <version.thorntail>2.2.0.Final</version.thorntail>
-    <version.wicket>8.1.0</version.wicket>
     <failOnMissingWebXml>false</failOnMissingWebXml>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>io.thorntail</groupId>
-        <artifactId>bom-all</artifactId>
-        <version>${version.thorntail}</version>
-        <scope>import</scope>
-        <type>pom</type>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
 
   <build>
     <finalName>demo</finalName>
@@ -58,7 +44,6 @@
 	<dependency>
 		<groupId>javax.servlet</groupId>
 		<artifactId>javax.servlet-api</artifactId>
-		<version>3.1.0</version>
 		<scope>provided</scope>
 	</dependency>
     <!-- WildFly Swarm Fractions -->
@@ -81,12 +66,10 @@
 		<dependency>
 			<groupId>org.apache.wicket</groupId>
 			<artifactId>wicket-core</artifactId>
-			<version>${version.wicket}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.wicket</groupId>
 			<artifactId>wicket-cdi</artifactId>
-			<version>${version.wicket}</version>
 		</dependency>
     <dependency>
       <groupId>org.postgresql</groupId>
