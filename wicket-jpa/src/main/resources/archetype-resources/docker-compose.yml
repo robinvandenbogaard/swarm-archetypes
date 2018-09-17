@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+
+  settings-service:
+    image: ${rootArtifactId}:latest
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
