@@ -7,7 +7,7 @@ services:
     environment:
       POSTGRES_PASSWORD: postgres
 
-  settings-service:
+  ${rootArtifactId}-webapp:
     image: ${rootArtifactId}:latest
     ports:
       - 8080:8080
