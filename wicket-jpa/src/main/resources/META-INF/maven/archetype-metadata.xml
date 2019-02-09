@@ -49,4 +49,12 @@
 			</fileSets>
 		</module>
 	</modules>
+	<fileSets>
+		<fileSet filtered="true" packaged="false" encoding="UTF-8">
+			<directory/>
+			<includes>
+				<include>docker-compose.yml</include>
+			</includes>
+		</fileSet>
+	</fileSets>
 </archetype-descriptor>

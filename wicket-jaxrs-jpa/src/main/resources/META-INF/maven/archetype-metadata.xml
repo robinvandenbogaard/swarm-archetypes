@@ -17,8 +17,8 @@
 				<fileSet encoding="UTF-8">
 					<directory>src/main/resources</directory>
 					<includes>
-						<include>**/*.yml</include>
 						<include>**/*.xml</include>
+						<include>**/*.yml</include>
 					</includes>
 				</fileSet>
 			</fileSets>
@@ -77,4 +77,12 @@
 			</fileSets>
 		</module>
 	</modules>
+	<fileSets>
+		<fileSet filtered="true" packaged="false" encoding="UTF-8">
+			<directory/>
+			<includes>
+				<include>docker-compose.yml</include>
+			</includes>
+		</fileSet>
+	</fileSets>
 </archetype-descriptor>
