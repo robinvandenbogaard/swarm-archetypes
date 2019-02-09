@@ -141,8 +141,7 @@
 											</inline>
 										</assembly>
 										<entryPoint>
-											<shell>java -jar
-												/opt/${project.build.finalName}-thorntail.jar</shell>
+											<shell>java -jar /opt/${project.build.finalName}-thorntail.jar</shell>
 										</entryPoint>
 									</build>
 								</image>
