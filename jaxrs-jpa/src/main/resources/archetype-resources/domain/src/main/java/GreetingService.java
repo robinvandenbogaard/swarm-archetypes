@@ -14,6 +14,10 @@ public class GreetingService {
 	@Inject
 	private GreetingGateway gateway;
 
+	public List<GreetingGateway.GreetingDTO> getAllGreetings() {
+		return gateway.getAllGreetings();
+	}
+
 	public List<GreetingGateway.GreetingDTO> greet(String name) {
 		gateway.save(name, new Date());
 		return gateway.getAllGreetings();
